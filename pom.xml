@@ -136,7 +136,6 @@
               <layout>default</layout>
           </repository>
          <repository>
-         <repository>
               <id>mulesoft-releases</id>
               <name>MuleSoft Releases Repository</name>
               <url>http://repository.mulesoft.org/releases/</url>
