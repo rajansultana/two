@@ -68,13 +68,6 @@
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-   <groupId>com.sun</groupId>
-   <artifactId>tools</artifactId>
-   <version>1.8</version>
-   <scope>system</scope>
-   <systemPath>${env.JAVA_HOME}\..\lib\tools.jar</systemPath>
- </dependency>
 		<!-- Xml configuration -->
 		<dependency>
 			<groupId>com.mulesoft.muleesb.modules</groupId>
@@ -136,36 +129,30 @@
 	</dependencies>
 
 	<repositories>
-	  <repository>
-              <id>Central</id>
-              <name>Central</name>
-              <url>http://repo1.maven.org/maven2/</url>
-              <layout>default</layout>
-          </repository>
+          <repository>
+            <id>Central</id>
+            <name>Central</name>
+            <url>http://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases Repository</name>
+            <url>http://repository.mulesoft.org/releases/</url>
+            <layout>default</layout>
+        </repository>
          <repository>
-              <id>mulesoft-releases</id>
-              <name>MuleSoft Releases Repository</name>
-              <url>http://repository.mulesoft.org/releases/</url>
-             <layout>default</layout>
-         </repository>
+    		<id>Nexus</id>
+    		<name>Nexus Public Repository</name>
+    		<url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
+    		<layout>default</layout>
+ 		</repository>
  		<repository>
-     		<id>Nexus</id>
-     		<name>Nexus Public Repository</name>
-     		<url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
-     		<layout>default</layout>
-  		</repository>
- 		<repository>
- 			<id>mulesoft-snapshots</id>
- 			<name>MuleSoft Snapshots Repository</name>
- 			<url>http://repository.mulesoft.org/snapshots/</url>
- 			<layout>default</layout>
-    </repository>
-    <repository>
-              <id>mulesoft-releases-2</id>
-              <name>MuleSoft Releases Repository</name>
-              <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
-              <layout>default</layout>
-          </repository>
+       <id>mulesoft-snapshots</id>
+       <name>MuleSoft Snapshots Repository</name>
+       <url>http://repository.mulesoft.org/snapshots/</url>
+       <layout>default</layout>
+   </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
